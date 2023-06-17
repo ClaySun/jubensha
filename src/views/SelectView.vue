@@ -1,12 +1,28 @@
 
 <template>
   <div class="home-bg">
-    <img :src="select00" alt="select00"/>
-    <img :src="select01" alt="select01"/>
-    <img :src="select02" alt="select02"/>
-    <img :src="select03" alt="select03"/>
-    <img :src="select04" alt="select04"/>
-    <img :src="select05" alt="select05"/>
+    <div class="list-area">
+      <div class="list-each">
+        <img :src="select00" alt="select00"/>
+      </div>
+      <div class="list-each">
+        <img :src="select01" alt="select01"/>
+      </div>
+      <div class="list-each">
+        <img :src="select02" alt="select02"/>
+      </div>
+    </div>
+    <div class="list-area">
+      <div class="list-each">
+        <img :src="select03" alt="select03"/>
+      </div>
+      <div class="list-each">
+        <img :src="select04" alt="select04"/>
+      </div>
+      <div class="list-each">
+        <img :src="select05" alt="select05"/>
+      </div>
+    </div>
     <!-- <router-link to="/about">
       <div class="home-link"></div>
     </router-link> -->
@@ -51,20 +67,20 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .home-link {
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .list-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.75rem;
+  }
+  .list-area>.list-each {
+    flex: 1;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .list-area img {
+    display: block;
+    margin: 0;
     width: 100%;
-    height: 100%;
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    background-image: url(../assets/images/home-btn.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 </style>
