@@ -2,7 +2,7 @@
   <div class="about-bg">
     <div class="desc-bg">
       <div class="desc-wrapper">
-        <img class="" :src="desc" alt="desc"/>
+        <img :src="desc" alt="desc"/>
         <div class="select-btn"></div>
         <div class="tag"></div>
       </div>
@@ -22,8 +22,8 @@ export default {
 </script>
 
 <style>
-::-webkit-scrollbar{display:none}
 .about-bg {
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -83,17 +83,21 @@ export default {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .desc-wrapper>img {
   display: block;
+  margin: 0 auto;
   width: 100%;
 }
-.desc-title {
-  /* margin-bottom: 2vh;
-  text-align: center;
-  font-size: 18px; */
-}
-.desc {
-  text-indent: 2em;
+@media (max-width: 375px) {
+  .desc-wrapper {
+    margin-top: 2rem;
+    overflow: scroll;
+    width: 5.8rem;
+    height: 9rem;
+  }
+  .desc-wrapper>img {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 </style>
