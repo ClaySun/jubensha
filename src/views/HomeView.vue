@@ -17,7 +17,6 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: red;
     background-image: url(../assets/images/home-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,9 +25,11 @@
   .home-link {
     position: absolute;
     top: 0;
-    left: 80px;
-    width: 107px;
-    height: 415px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(../assets/images/home-btn.png);
     background-size: cover;
     background-repeat: no-repeat;

@@ -30,18 +30,19 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: red;
   background-image: url(../assets/images/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .desc-bg {
-  position: relative;
-  /* box-sizing: border-box; */
-  width: 90vw;
-  height: 96vh;
-  /* padding: 14vh 10vw 14vh 10vw; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(../assets/images/about-desc-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
