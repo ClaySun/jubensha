@@ -3,7 +3,9 @@
     <div class="desc-bg">
       <div class="desc-wrapper">
         <img :src="desc" alt="desc"/>
-        <div class="select-btn"></div>
+        <router-link to="/select">
+          <div class="select-btn"></div>
+        </router-link>
         <div class="tag"></div>
       </div>
     </div>
@@ -23,13 +25,18 @@ export default {
 
 <style>
 .about-bg {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
   background-image: url(../assets/images/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +58,7 @@ export default {
 .select-btn {
   z-index: 2;
   position: absolute;
-  bottom: 0;
+  bottom: 0.4rem;
   left: 50%;
   margin-left: -110px;
   width: 4.18rem;
@@ -64,7 +71,7 @@ export default {
 .tag {
   z-index: 1;
   position: absolute;
-  bottom: -1.2rem;
+  bottom: -0.8rem;
   right: 50%;
   margin-right: -2.4rem;
   width: 1rem;
