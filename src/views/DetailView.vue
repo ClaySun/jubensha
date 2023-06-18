@@ -8,7 +8,7 @@
         <router-link to="/select">
           <div @click="$router.back(-1)" class="intro-back"></div>
         </router-link>
-        <router-link to="/select">
+        <router-link to="/map">
           <div class="intro-map"></div>
         </router-link>
       </div>
