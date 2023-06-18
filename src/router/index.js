@@ -17,10 +17,11 @@ const router = createRouter({
   }, {
     path: '/select',
     name: 'select',
-    // route level code-splitting
-    // this generates a separate chunk (About.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/SelectView.vue')
+  }, {
+    path: '/detail',
+    name: 'Detail',
+    component: () => import('../views/DetailView.vue')
   }]
 })
 

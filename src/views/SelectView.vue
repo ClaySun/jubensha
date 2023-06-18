@@ -3,24 +3,36 @@
   <div class="home-bg">
     <div class="list-area">
       <div class="list-each">
-        <img :src="select00" alt="select00"/>
+        <router-link to="/detail">
+          <img :src="select00" alt="select00"/>
+        </router-link>
       </div>
       <div class="list-each">
-        <img :src="select01" alt="select01"/>
+        <router-link to="/detail">
+          <img :src="select01" alt="select01"/>
+        </router-link>
       </div>
       <div class="list-each">
-        <img :src="select02" alt="select02"/>
+        <router-link to="/detail">
+          <img :src="select02" alt="select02"/>
+        </router-link>
       </div>
     </div>
     <div class="list-area">
       <div class="list-each">
-        <img :src="select03" alt="select03"/>
+        <router-link to="/detail">
+          <img :src="select03" alt="select03"/>
+        </router-link>
       </div>
       <div class="list-each">
-        <img :src="select04" alt="select04"/>
+        <router-link to="/detail">
+          <img :src="select04" alt="select04"/>
+        </router-link>
       </div>
       <div class="list-each">
-        <img :src="select05" alt="select05"/>
+        <router-link to="/detail">
+          <img :src="select05" alt="select05"/>
+        </router-link>
       </div>
     </div>
     <!-- <router-link to="/about">
