@@ -1,55 +1,57 @@
 <template>
   <div class="about-bg">
     <div class="desc-bg"></div>
-    <div class="list-area">
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map00" alt="select00"/>
-        </router-link>
+    <div class="location-area">
+      <div class="list-area">
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map00" alt="select00"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map01" alt="select01"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map02" alt="select02"/>
+          </router-link>
+        </div>
       </div>
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map01" alt="select01"/>
-        </router-link>
+      <div class="list-area">
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map03" alt="select03"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map04" alt="select04"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map05" alt="select05"/>
+          </router-link>
+        </div>
       </div>
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map02" alt="select02"/>
-        </router-link>
-      </div>
-    </div>
-    <div class="list-area">
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map03" alt="select03"/>
-        </router-link>
-      </div>
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map04" alt="select04"/>
-        </router-link>
-      </div>
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map05" alt="select05"/>
-        </router-link>
-      </div>
-    </div>
-    <div class="list-area">
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map06" alt="select03"/>
-        </router-link>
-      </div>
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map07" alt="select04"/>
-        </router-link>
-      </div>
-      <div class="list-each">
-        <router-link to="/detail">
-          <img :src="map08" alt="select05"/>
-        </router-link>
+      <div class="list-area">
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map06" alt="select03"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map07" alt="select04"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/detail">
+            <img :src="map08" alt="select05"/>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -116,31 +118,22 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.btns-area {
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0.2rem;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 1rem;
+.location-area {
+  margin-top: 5.4rem;
+}
+.list-area {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  width: 100vw;
 }
-.intro-back, 
-.intro-map {
-  width: 4.18rem;
-  height: 1.7rem;
-  background-image: url(../assets/images/detail-back.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+.list-area>.list-each {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
-.intro-map {
-  background-image: url(../assets/images/detail-map.png);
-}
-
 @media (max-width: 375px) {
   
 }
