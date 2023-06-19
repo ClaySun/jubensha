@@ -1,8 +1,25 @@
 <template>
   <div class="about-bg">
-    <div class="desc-bg">
+    <div :class="`desc-bg desc-bg0${id}`">
       <div class="desc-wrapper">
-        <img :src="intro" alt="desc"/>
+        <template v-if="id == 0">
+          <img :src="intro00" alt="desc"/>
+        </template>
+        <template v-else-if="id == 1">
+          <img :src="intro01" alt="desc"/>
+        </template>
+        <template v-else-if="id == 2">
+          <img :src="intro02" alt="desc"/>
+        </template>
+        <template v-else-if="id == 3">
+          <img :src="intro03" alt="desc"/>
+        </template>
+        <template v-else-if="id == 4">
+          <img :src="intro04" alt="desc"/>
+        </template>
+        <template v-else-if="id == 5">
+          <img :src="intro05" alt="desc"/>
+        </template>
       </div>
       <div class="btns-area">
         <router-link to="/select">
@@ -17,15 +34,26 @@
 </template>
 
 <script>
-import intro from '../assets/images/desc-intro.png'
+import intro00 from '../assets/images/desc-intro00.png'
+import intro01 from '../assets/images/desc-intro01.png'
+import intro02 from '../assets/images/desc-intro02.png'
+import intro03 from '../assets/images/desc-intro03.png'
+import intro04 from '../assets/images/desc-intro04.png'
+import intro05 from '../assets/images/desc-intro05.png'
 import map from '../assets/images/detail-map.png'
 import back from '../assets/images/detail-back.png'
 export default {
   data () {
     return {
-      intro,
+      intro00,
+      intro01,
+      intro02,
+      intro03,
+      intro04,
+      intro05,
       map,
-      back
+      back,
+      id: this.$route.params.id
     }
   },
   mounted () {
@@ -61,10 +89,27 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/images/detail00.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.desc-bg00 {
+  background-image: url(../assets/images/detail00.png);
+}
+.desc-bg01 {
+  background-image: url(../assets/images/detail01.png);
+}
+.desc-bg02 {
+  background-image: url(../assets/images/detail02.png);
+}
+.desc-bg03 {
+  background-image: url(../assets/images/detail03.png);
+}
+.desc-bg04 {
+  background-image: url(../assets/images/detail04.png);
+}
+.desc-bg05 {
+  background-image: url(../assets/images/detail05.png);
 }
 .btns-area {
   z-index: 2;
