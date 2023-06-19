@@ -14,7 +14,7 @@
             <img :src="role00" alt="role00"/>
           </div>
           <div>
-            <router-link to="/detail">
+            <router-link to="/detail/0">
               <img :src="select00" alt="select00"/>
             </router-link>
           </div>
@@ -24,7 +24,7 @@
             <img :src="role01" alt="role01"/>
           </div>
           <div>
-            <router-link to="/detail">
+            <router-link to="/detail/1">
               <img :src="select01" alt="select01"/>
             </router-link>
           </div>
@@ -34,7 +34,7 @@
             <img :src="role02" alt="role02"/>
           </div>
           <div>
-            <router-link to="/detail">
+            <router-link to="/detail/2">
               <img :src="select02" alt="select02"/>
             </router-link>
           </div>
@@ -46,7 +46,7 @@
             <img :src="role03" alt="role03"/>
           </div>
           <div>
-            <router-link to="/detail">
+            <router-link to="/detail/3">
               <img :src="select03" alt="select03"/>
             </router-link>
           </div>
@@ -56,7 +56,7 @@
             <img :src="role04" alt="role04"/>
           </div>
           <div>
-            <router-link to="/detail">
+            <router-link to="/detail/4">
               <img :src="select04" alt="select04"/>
             </router-link>
           </div>
@@ -66,7 +66,7 @@
             <img :src="role05" alt="role05"/>
           </div>
           <div>
-            <router-link to="/detail">
+            <router-link to="/detail/5">
               <img :src="select05" alt="select05"/>
             </router-link>
           </div>

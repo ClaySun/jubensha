@@ -27,6 +27,9 @@ export default {
       map,
       back
     }
+  },
+  mounted () {
+    console.log('test--', this.$route.params.id)
   }
 }
 </script>

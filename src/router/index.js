@@ -19,7 +19,7 @@ const router = createRouter({
     name: 'select',
     component: () => import('../views/SelectView.vue')
   }, {
-    path: '/detail',
+    path: '/detail/:id',
     name: 'Detail',
     component: () => import('../views/DetailView.vue')
   }, {
