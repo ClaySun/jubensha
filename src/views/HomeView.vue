@@ -13,6 +13,7 @@
 
 <style scoped>
   .home-bg {
+    overflow: hidden;
     z-index: 1;
     position: absolute;
     top: env(safe-area-inset-top);
@@ -20,7 +21,7 @@
     bottom: env(safe-area-inset-bottom);
     left: 0;
     width: 100vw;
-    /* height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom)); */
+    height: 100vh;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
     background-image: url(../assets/images/home-bg.png);
@@ -29,6 +30,7 @@
     background-position: center center;
   }
   .home-link {
+    overflow: hidden;
     z-index: 2;
     position: absolute;
     top: env(safe-area-inset-top);
@@ -36,7 +38,7 @@
     bottom: env(safe-area-inset-bottom);
     left: 0;
     width: 100vw;
-    /* height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));; */
+    height: 100vh;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
     background-image: url(../assets/images/home-btn.png);
