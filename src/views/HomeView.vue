@@ -19,8 +19,8 @@
     right: 0;
     bottom: env(safe-area-inset-bottom);
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
     background-image: url(../assets/images/home-bg.png);
@@ -35,8 +35,8 @@
     right: 0;
     bottom: env(safe-area-inset-bottom);
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
     background-image: url(../assets/images/home-btn.png);
