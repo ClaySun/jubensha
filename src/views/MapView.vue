@@ -1,6 +1,9 @@
 <template>
-  <div class="about-bg">
+  <div class="map-bg">
     <div class="desc-bg"></div>
+    <div class="back-to-roles" @click="$router.back(-1)">
+      <img :src="mapBack" alt="mapBack"/>
+    </div>
     <div class="location-area">
       <div class="list-area">
         <div class="list-each">
@@ -58,6 +61,7 @@
 </template>
 
 <script>
+import mapBack from '../assets/images/back-to-roles.png'
 import map from '../assets/images/map-bg.png'
 import map00 from '../assets/images/map00.png'
 import map01 from '../assets/images/map01.png'
@@ -80,14 +84,15 @@ export default {
       map05,
       map06,
       map07,
-      map08
+      map08,
+      mapBack
     }
   }
 }
 </script>
 
-<style>
-.about-bg {
+<style scoped>
+.map-bg {
   z-index: 1;
   position: fixed;
   top: 0;
@@ -97,9 +102,6 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../assets/images/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,8 +120,16 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.back-to-roles {
+  z-index: 3;
+  position: relative;
+  margin-top: 1.4rem;
+  text-align: center;
+}
 .location-area {
-  margin-top: 5.4rem;
+  z-index: 2;
+  position: relative;
+  margin-top: 6rem;
 }
 .list-area {
   display: flex;

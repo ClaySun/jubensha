@@ -22,9 +22,9 @@
         </template>
       </div>
       <div class="btns-area">
-        <router-link to="/select">
+        <a>
           <div @click="$router.back(-1)" class="intro-back"></div>
-        </router-link>
+        </a>
         <router-link to="/map">
           <div class="intro-map"></div>
         </router-link>
