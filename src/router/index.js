@@ -26,6 +26,10 @@ const router = createRouter({
     path: '/map',
     name: 'Map',
     component: () => import('../views/MapView.vue')
+  }, {
+    path: '/desc/:id',
+    name: 'Desc',
+    component: () => import('../views/DescView.vue')
   }]
 })
 

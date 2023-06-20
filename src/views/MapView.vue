@@ -4,55 +4,58 @@
     <div class="back-to-roles" @click="$router.back(-1)">
       <img :src="mapBack" alt="mapBack"/>
     </div>
+    <div class="map-scale" @click="$router.back(-1)">
+      <img :src="mapScale" alt="mapScale"/>
+    </div>
     <div class="location-area">
       <div class="list-area">
         <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map00" alt="select00"/>
+          <router-link to="/desc/0">
+            <img :src="map00" alt="map00"/>
           </router-link>
         </div>
         <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map01" alt="select01"/>
+          <router-link to="/desc/1">
+            <img :src="map01" alt="map01"/>
           </router-link>
         </div>
         <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map02" alt="select02"/>
-          </router-link>
-        </div>
-      </div>
-      <div class="list-area">
-        <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map03" alt="select03"/>
-          </router-link>
-        </div>
-        <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map04" alt="select04"/>
-          </router-link>
-        </div>
-        <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map05" alt="select05"/>
+          <router-link to="/desc/2">
+            <img :src="map02" alt="map02"/>
           </router-link>
         </div>
       </div>
       <div class="list-area">
         <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map06" alt="select03"/>
+          <router-link to="/desc/3">
+            <img :src="map03" alt="map03"/>
           </router-link>
         </div>
         <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map07" alt="select04"/>
+          <router-link to="/desc/4">
+            <img :src="map04" alt="map04"/>
           </router-link>
         </div>
         <div class="list-each">
-          <router-link to="/detail">
-            <img :src="map08" alt="select05"/>
+          <router-link to="/desc/5">
+            <img :src="map05" alt="map05"/>
+          </router-link>
+        </div>
+      </div>
+      <div class="list-area">
+        <div class="list-each">
+          <router-link to="/desc/6">
+            <img :src="map06" alt="map06"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/desc/7">
+            <img :src="map07" alt="map07"/>
+          </router-link>
+        </div>
+        <div class="list-each">
+          <router-link to="/desc/8">
+            <img :src="map08" alt="map08"/>
           </router-link>
         </div>
       </div>
@@ -62,6 +65,7 @@
 
 <script>
 import mapBack from '../assets/images/back-to-roles.png'
+import mapScale from '../assets/images/map-scale.png'
 import map from '../assets/images/map-bg.png'
 import map00 from '../assets/images/map00.png'
 import map01 from '../assets/images/map01.png'
@@ -85,7 +89,8 @@ export default {
       map06,
       map07,
       map08,
-      mapBack
+      mapBack,
+      mapScale
     }
   }
 }
@@ -126,10 +131,16 @@ export default {
   margin-top: 1.4rem;
   text-align: center;
 }
+.map-scale {
+  z-index: 3;
+  position: relative;
+  margin-top: 4.4rem;
+  text-align: center;
+}
 .location-area {
   z-index: 2;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 .list-area {
   display: flex;
