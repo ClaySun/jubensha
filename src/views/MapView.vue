@@ -4,9 +4,11 @@
     <div class="back-to-roles" @click="$router.back(-1)">
       <img :src="mapBack" alt="mapBack"/>
     </div>
-    <div class="map-scale" @click="$router.back(-1)">
-      <img :src="mapScale" alt="mapScale"/>
-    </div>
+    <router-link to="/scale">
+      <div class="map-scale">
+        <img :src="mapScale" alt="mapScale"/>
+      </div>
+    </router-link>
     <div class="location-area">
       <div class="list-area">
         <div class="list-each">

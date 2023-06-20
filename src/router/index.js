@@ -30,6 +30,10 @@ const router = createRouter({
     path: '/desc/:id',
     name: 'Desc',
     component: () => import('../views/DescView.vue')
+  }, {
+    path: '/scale',
+    name: 'Scale',
+    component: () => import('../views/ScaleView.vue')
   }]
 })
 
