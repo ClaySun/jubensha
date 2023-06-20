@@ -1,10 +1,10 @@
 <template>
-  <div class="map-bg">
-    <div class="desc-bg"></div>
-    <div class="desc-bg02"></div>
+  <div :class="`map-bg desc-bg${id}`">
+    <!-- <div class="desc-bg"></div>
+    <div class="desc-bg02"></div> -->
     <div class="desc-btn" @click="$router.back(-1)">
-      <img :src="descBtn" alt="descBtn"/>
-      <img :src="descBtn2" alt="descBtn2"/>
+      <!-- <img :src="descBtn" alt="descBtn"/>
+      <img :src="descBtn2" alt="descBtn2"/> -->
     </div>
   </div>
 </template>
@@ -16,8 +16,12 @@ export default {
   data () {
     return {
       descBtn,
-      descBtn2
+      descBtn2,
+      id: this.$route.params.id
     }
+  },
+  mounted () {
+    console.log('desc--', this.$route.params.id)
   }
 }
 </script>
@@ -33,10 +37,37 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url(../assets/images/about-bg.png);
+  /* background-image: url(../assets/images/about-bg.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.desc-bg0 {
+  background-image: url(../assets/images/about-bg0.png);
+}
+.desc-bg1 {
+  background-image: url(../assets/images/about-bg1.jpg);
+}
+.desc-bg2 {
+  background-image: url(../assets/images/about-bg2.png);
+}
+.desc-bg3 {
+  background-image: url(../assets/images/about-bg3.png);
+}
+.desc-bg4 {
+  background-image: url(../assets/images/about-bg4.png);
+}
+.desc-bg5 {
+  background-image: url(../assets/images/about-bg5.png);
+}
+.desc-bg6 {
+  background-image: url(../assets/images/about-bg6.png);
+}
+.desc-bg7 {
+  background-image: url(../assets/images/about-bg7.png);
+}
+.desc-bg8 {
+  background-image: url(../assets/images/about-bg8.png);
 }
 .desc-bg,
 .desc-bg02 {
@@ -63,7 +94,10 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: center;
+  height: 10vh;
+  /* opacity: .5;
+  background-color: red;
+  text-align: center; */
 }
 @media (max-width: 375px) {
   
