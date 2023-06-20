@@ -141,7 +141,7 @@ export default {
   }
   .roles-area {
     position: relative;
-    margin-top: 1rem;
+    margin-top: .4rem;
     padding: 0 0.4rem;
   }
   .bty {
