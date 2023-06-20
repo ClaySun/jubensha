@@ -2,9 +2,9 @@
   <div class="map-bg">
     <div class="desc-bg"></div>
     <div class="map-area">
-      <div class="image-area">
+      <!-- <div class="image-area"> -->
         <img :src="map" alt="map" />
-      </div>
+      <!-- </div> -->
     </div>
     <div class="desc-btn" @click="$router.back(-1)">
       <img :src="descBtn2" alt="descBtn2"/>
@@ -71,10 +71,11 @@ export default {
   width: 16.5rem;
   height: 9.9rem;
 }
-.image-area>img {
+.map-area>img {
   display: block;
-  width: 100%;
-  height: auto;
+  margin: 0;
+  width: auto;
+  height: 9.8rem;
 }
 .desc-btn {
   z-index: 2;
