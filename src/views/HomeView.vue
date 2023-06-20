@@ -13,8 +13,8 @@
 
 <style scoped>
   .home-bg {
-    overflow: hidden;
-    box-sizing: border-box;
+    /* overflow: hidden;
+    box-sizing: border-box; */
     z-index: 1;
     position: absolute;
     top: 0;
@@ -31,8 +31,8 @@
     background-position: center center;
   }
   .home-link {
-    overflow: hidden;
-    box-sizing: border-box;
+    /* overflow: hidden;
+    box-sizing: border-box; */
     z-index: 2;
     position: absolute;
     top: 0;

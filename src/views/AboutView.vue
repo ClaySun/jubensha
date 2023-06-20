@@ -26,13 +26,13 @@ export default {
 <style scoped>
 .about-bg {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -43,20 +43,21 @@ export default {
   background-position: center center;
 }
 .desc-bg {
+  z-index: 2;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url(../assets/images/about-desc-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .select-btn {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   bottom: 0.4rem;
   left: 50%;

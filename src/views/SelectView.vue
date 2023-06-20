@@ -116,13 +116,13 @@ export default {
 <style scoped>
   .home-bg {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     background-image: url(../assets/images/about-bg.png);

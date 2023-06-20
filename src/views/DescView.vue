@@ -29,13 +29,13 @@ export default {
 <style scoped>
 .map-bg {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   /* background-image: url(../assets/images/about-bg.png); */
   background-size: cover;
@@ -77,8 +77,8 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url(../assets/images/desc-bg01.png);
   background-size: contain;
   background-repeat: no-repeat;
