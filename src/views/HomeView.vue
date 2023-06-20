@@ -15,9 +15,9 @@
   .home-bg {
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: env(safe-area-inset-top);
     right: 0;
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom);
     left: 0;
     width: 100%;
     height: 100%;
@@ -31,9 +31,9 @@
   .home-link {
     z-index: 2;
     position: absolute;
-    top: 0;
+    top: env(safe-area-inset-top);
     right: 0;
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom);
     left: 0;
     width: 100%;
     height: 100%;
