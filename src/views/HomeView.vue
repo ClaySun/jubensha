@@ -20,7 +20,7 @@
     bottom: env(safe-area-inset-bottom);
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
     background-image: url(../assets/images/home-bg.png);
@@ -36,7 +36,7 @@
     bottom: env(safe-area-inset-bottom);
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
     background-image: url(../assets/images/home-btn.png);
