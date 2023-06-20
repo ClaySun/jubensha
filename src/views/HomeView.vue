@@ -26,7 +26,7 @@
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     background-image: url(../assets/images/home-bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
   }
