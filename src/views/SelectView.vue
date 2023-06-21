@@ -10,65 +10,53 @@
       </div>
       <div class="list-area">
         <div class="list-each">
-          <div class="role">
+          <router-link class="role" to="/detail/0">
             <img :src="role00" alt="role00"/>
-          </div>
-          <div>
-            <router-link to="/detail/0">
-              <img :src="select00" alt="select00"/>
-            </router-link>
+          </router-link>
+          <div class="name">
+            <img :src="select00" alt="select00"/>
           </div>
         </div>
         <div class="list-each">
-           <div class="role">
+          <router-link class="role" to="/detail/1">
             <img :src="role01" alt="role01"/>
-          </div>
-          <div>
-            <router-link to="/detail/1">
-              <img :src="select01" alt="select01"/>
-            </router-link>
+          </router-link>
+          <div class="name">
+            <img :src="select01" alt="select01"/>
           </div>
         </div>
         <div class="list-each">
-           <div class="role">
+          <router-link class="role" to="/detail/2">
             <img :src="role02" alt="role02"/>
-          </div>
-          <div>
-            <router-link to="/detail/2">
-              <img :src="select02" alt="select02"/>
-            </router-link>
+          </router-link>
+          <div class="name">
+            <img :src="select02" alt="select02"/>
           </div>
         </div>
       </div>
       <div class="list-area gap">
         <div class="list-each">
-           <div class="role">
+          <router-link class="role" to="/detail/3">
             <img :src="role03" alt="role03"/>
-          </div>
-          <div>
-            <router-link to="/detail/3">
-              <img :src="select03" alt="select03"/>
-            </router-link>
+          </router-link>
+          <div class="name">
+            <img :src="select03" alt="select03"/>
           </div>
         </div>
         <div class="list-each">
-           <div class="role">
+          <router-link class="role" to="/detail/5">
             <img :src="role04" alt="role04"/>
-          </div>
-          <div>
-            <router-link to="/detail/4">
-              <img :src="select04" alt="select04"/>
-            </router-link>
+          </router-link>
+          <div class="name">
+            <img :src="select04" alt="select04"/>
           </div>
         </div>
         <div class="list-each">
-           <div class="role">
+          <router-link class="role" to="/detail/5">
             <img :src="role05" alt="role05"/>
-          </div>
-          <div>
-            <router-link to="/detail/5">
-              <img :src="select05" alt="select05"/>
-            </router-link>
+          </router-link>
+          <div class="name">
+            <img :src="select05" alt="select05"/>
           </div>
         </div>
       </div>
@@ -174,7 +162,11 @@ export default {
     height: auto;
     margin-bottom: 0.2rem;
   }
-  .role img {
+  .name {
+    width: 100%;
+  }
+  .role img,
+  .name img {
     display: block;
     margin: 0;
     width: 100%;
