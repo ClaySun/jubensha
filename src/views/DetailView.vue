@@ -137,7 +137,7 @@ export default {
 }
 .desc-wrapper {
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2.8rem;
   overflow: scroll;
   width: 5.8rem;
   height: 11rem;
