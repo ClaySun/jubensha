@@ -84,7 +84,7 @@ export default {
 .image-area {
   overflow-x: scroll;
   width: 100%;
-  height: 9.6rem;
+  height: 9.8rem;
   position: absolute;
   left: 0;
   top: 0;
