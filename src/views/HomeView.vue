@@ -25,7 +25,7 @@
     height: 100vh;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
-    background-image: url(../assets/images/home-bg.png);
+    background-image: url(../assets/images/home-bg2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -43,7 +43,7 @@
     height: 100vh;
     /* padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom); */
-    background-image: url(../assets/images/home-btn.png);
+    background-image: url(../assets/images/home-btn2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

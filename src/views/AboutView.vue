@@ -87,7 +87,7 @@ export default {
   margin-top: 2.8rem;
   overflow: scroll;
   width: 5.8rem;
-  height: 11rem;
+  height: 10rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
