@@ -59,7 +59,7 @@ export default {
 .select-btn {
   z-index: 3;
   position: absolute;
-  bottom: 1.6rem;
+  bottom: 2rem;
   left: 50%;
   margin-left: -110px;
   width: 4.18rem;
@@ -72,7 +72,7 @@ export default {
 .tag {
   z-index: 1;
   position: absolute;
-  bottom: 0.4rem;
+  bottom: 0.8rem;
   right: 50%;
   margin-right: -2.4rem;
   width: 1rem;
