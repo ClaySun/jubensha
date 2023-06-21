@@ -46,7 +46,7 @@ export default {
   background-image: url(../assets/images/about-bg0.png);
 }
 .desc-bg1 {
-  background-image: url(../assets/images/about-bg1.jpg);
+  background-image: url(../assets/images/about-bg1.png);
 }
 .desc-bg2 {
   background-image: url(../assets/images/about-bg2.png);
