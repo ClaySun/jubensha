@@ -131,7 +131,7 @@ export default {
     background-position: center center;
   }
   .select-role {
-    margin: 1rem auto 0 auto;
+    margin: .6rem auto 0 auto;
     width: 3rem;
     height: auto;
   }

@@ -22,9 +22,7 @@
         </template>
       </div>
       <div class="btns-area">
-        <a>
-          <div @click="$router.back(-1)" class="intro-back"></div>
-        </a>
+        <div @click="$router.back(-1)" class="intro-back"></div>
         <router-link to="/map">
           <div class="intro-map"></div>
         </router-link>
@@ -112,16 +110,13 @@ export default {
   background-image: url(../assets/images/detail05.png);
 }
 .btns-area {
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0.2rem;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 1rem;
+  margin-top: .4rem;
   display: flex;
   justify-content: space-around;
+}
+.btns-area>a {
+  display: block;
+  flex: 1;
 }
 .intro-back, 
 .intro-map {
@@ -137,10 +132,10 @@ export default {
 }
 .desc-wrapper {
   margin: 0 auto;
-  margin-top: 2.8rem;
+  margin-top: 5rem;
   overflow: scroll;
-  width: 5.8rem;
-  height: 10.4rem;
+  width: 5.2rem;
+  height: 8rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
