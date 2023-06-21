@@ -132,8 +132,8 @@ export default {
   }
   .select-role {
     margin: 1rem auto 0 auto;
-    width: 4rem;
-    height: 1.6rem;
+    width: 3rem;
+    height: auto;
   }
   .select-role>img {
     display: block;
@@ -154,6 +154,7 @@ export default {
   .list-area {
     display: flex;
     justify-content: space-between;
+    gap: 0.2rem;
   }
   .list-area>.list-each {
     flex: 1;
@@ -166,24 +167,17 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 2.4rem;
-    height: 5.2rem; */
     max-width: 2.4rem;
     flex: 1;
     width: 100%;
     max-height: 5.2rem;
     height: auto;
-    padding: 1rem .05rem;
     margin-bottom: 0.2rem;
-    background-image: url(../assets/images/role-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
   .role img {
     display: block;
     margin: 0;
-    width: 1.2rem;
+    width: 100%;
   }
   .gap {
     margin-top: 0.4rem;
