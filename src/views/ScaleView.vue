@@ -14,6 +14,7 @@
 
 <script>
 import descBtn2 from '../assets/images/desc-btn2.png'
+// import descBtn2 from '../assets/images/desc-btn2.png'
 import map from '../assets/images/map.png'
 export default {
   data () {
@@ -72,6 +73,9 @@ export default {
   height: 9.9rem;
 }
 .map-area>img {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: block;
   margin: 0;
   width: auto;
