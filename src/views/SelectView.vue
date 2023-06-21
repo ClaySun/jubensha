@@ -166,8 +166,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.4rem;
-    height: 5.2rem;
+    /* width: 2.4rem;
+    height: 5.2rem; */
+    max-width: 2.4rem;
+    flex: 1;
+    width: 100%;
+    max-height: 5.2rem;
+    height: auto;
+    padding: 1rem .05rem;
     margin-bottom: 0.2rem;
     background-image: url(../assets/images/role-bg.png);
     background-size: cover;
