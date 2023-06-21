@@ -1,10 +1,10 @@
 <template>
   <div class="map-bg">
-    <div class="desc-bg"></div>
+    <!-- <div class="desc-bg"></div> -->
     <div class="map-area">
-      <!-- <div class="image-area"> -->
+      <div class="image-area">
         <img :src="map" alt="map" />
-      <!-- </div> -->
+      </div>
     </div>
     <div class="desc-btn" @click="$router.back(-1)">
       <img :src="descBtn2" alt="descBtn2"/>
@@ -57,22 +57,42 @@ export default {
   background-position: center center;
 }
 .map-area {
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   z-index: 3;
   position: absolute;
   top: 3.6rem;
   right: 1rem;
   left: .9rem;
   height: 9.8rem;
-  border-radius: .4rem;
+  /* border-radius: .4rem; */
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
+}
+.map-area::before {
+  /* z-index: 1; */
+  content: '';
+  position: absolute;
+  left: -1.4rem;
+  top: -1.4rem;
+  right: -1.5rem;
+  bottom: -1.2rem;
+  background-image: url(../assets/images/scale-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.image-area {
+  overflow-x: scroll;
+  width: 100%;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: .8rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-.image-area {
-  width: 16.5rem;
-  height: 9.9rem;
-}
-.map-area>img {
+.image-area>img {
   position: absolute;
   left: 0;
   top: 0;
