@@ -28,7 +28,7 @@
     background-image: url(../assets/images/home-bg2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
   }
   .home-link {
     /* overflow: hidden;
@@ -46,6 +46,6 @@
     background-image: url(../assets/images/home-btn2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
   }
 </style>

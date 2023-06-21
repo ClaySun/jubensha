@@ -40,7 +40,7 @@ export default {
   background-image: url(../assets/images/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .desc-bg {
   z-index: 2;
@@ -54,7 +54,7 @@ export default {
   background-image: url(../assets/images/about-desc-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .select-btn {
   z-index: 3;

@@ -77,7 +77,7 @@ export default {
   background-image: url(../assets/images/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .desc-bg {
   position: absolute;
@@ -89,7 +89,7 @@ export default {
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .desc-bg00 {
   background-image: url(../assets/images/detail00.png);
@@ -132,7 +132,7 @@ export default {
 }
 .desc-wrapper {
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 2.6rem;
   overflow: scroll;
   width: 5.2rem;
   height: 7.2rem;

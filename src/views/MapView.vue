@@ -112,7 +112,7 @@ export default {
   background-image: url(../assets/images/about-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .desc-bg {
   position: absolute;
@@ -125,12 +125,12 @@ export default {
   background-image: url(../assets/images/map-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .back-to-roles {
   z-index: 3;
   position: relative;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
   text-align: center;
 }
 .map-scale {
@@ -142,7 +142,7 @@ export default {
 .location-area {
   z-index: 2;
   position: relative;
-  margin-top: 1rem;
+  margin-top: .6rem;
 }
 .list-area {
   display: flex;
