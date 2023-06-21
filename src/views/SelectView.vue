@@ -168,8 +168,11 @@ export default {
   .role img,
   .name img {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
+  }
+  .name img {
+    max-width: 2.4rem;
   }
   .gap {
     margin-top: 0.4rem;
