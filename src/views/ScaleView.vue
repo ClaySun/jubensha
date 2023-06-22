@@ -110,6 +110,14 @@ export default {
   text-align: center;
 }
 @media (max-width: 375px) {
+  .map-area {
+    z-index: 3;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    left: .9rem;
+    height: 8rem;
+  }
   .image-area {
     height: 8rem;
   }
