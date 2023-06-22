@@ -158,6 +158,8 @@ export default {
   align-items: center;
 }
 @media (max-width: 375px) {
-  
+  .map-scale {
+    margin-top: 3rem;
+  }
 }
 </style>
