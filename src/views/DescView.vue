@@ -94,7 +94,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 10vh;
+  top: 0;
   /* opacity: .5;
   background-color: red;
   text-align: center; */

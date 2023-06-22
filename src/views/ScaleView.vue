@@ -122,8 +122,8 @@ export default {
     content: '';
     position: absolute;
     left: -1rem;
-    top: -1rem;
-    right: -1.3rem;
+    top: -1.2rem;
+    right: -1rem;
     bottom: -1rem;
   }
   .image-area {
@@ -133,7 +133,7 @@ export default {
     height: 8rem;
   }
   .desc-btn {
-    bottom: 1rem;
+    bottom: .5rem;
   }
 }
 </style>
