@@ -110,12 +110,11 @@ export default {
   text-align: center;
 }
 @media (max-width: 375px) {
-  .map-area::before {
-
-    left: -1rem;
-    top: -1rem;
-    right: -1rem;
-    bottom: -1rem;
+  .image-area {
+    height: 8rem;
+  }
+  .image-area>img {
+    height: 8rem;
   }
   .desc-btn {
     bottom: 1rem;
