@@ -105,9 +105,16 @@ export default {
   }
   .select-btn {
     bottom: 2.4rem;
-    margin-left: -1.05px;
+    margin-left: -1.05rem;
     width: 2.09rem;
     height: 0.85rem;
+  }
+  .tag {
+    bottom: 1.8rem;
+    right: 50%;
+    margin-right: -1.3rem;
+    width: .5rem;
+    height: 1rem;
   }
 }
 </style>
