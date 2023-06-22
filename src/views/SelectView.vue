@@ -177,4 +177,9 @@ export default {
   .gap {
     margin-top: 0.4rem;
   }
+  @media (max-width: 375px) {
+    .select-role {
+      margin-top: .4rem;
+    }
+  }
 </style>

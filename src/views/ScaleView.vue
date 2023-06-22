@@ -121,8 +121,8 @@ export default {
   .map-area::before {
     content: '';
     position: absolute;
-    left: -1.2rem;
-    top: -1.2rem;
+    left: -1rem;
+    top: -1rem;
     right: -1.3rem;
     bottom: -1rem;
   }
