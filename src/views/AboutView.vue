@@ -59,7 +59,7 @@ export default {
 .select-btn {
   z-index: 3;
   position: absolute;
-  bottom: 2rem;
+  bottom: 2.4rem;
   left: 50%;
   margin-left: -110px;
   width: 4.18rem;
@@ -100,8 +100,8 @@ export default {
   .desc-wrapper {
     margin-top: 2rem;
     overflow: scroll;
-    width: 5rem;
-    height: 6rem;
+    width: 4rem;
+    height: 5rem;
   }
   /* .desc-wrapper>img {
     margin: 0 auto;
