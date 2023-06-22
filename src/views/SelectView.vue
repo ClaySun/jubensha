@@ -180,6 +180,7 @@ export default {
   @media (max-width: 375px) {
     .select-role {
       margin-top: .4rem;
+      width: 2rem;
     }
   }
 </style>
