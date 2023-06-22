@@ -118,6 +118,14 @@ export default {
     left: .9rem;
     height: 8rem;
   }
+  .map-area::before {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    top: -1.2rem;
+    right: -1.3rem;
+    bottom: -1rem;
+  }
   .image-area {
     height: 8rem;
   }
