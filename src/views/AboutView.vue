@@ -61,7 +61,7 @@ export default {
   position: absolute;
   bottom: 2.4rem;
   left: 50%;
-  margin-left: -110px;
+  margin-left: -2.09rem;
   width: 4.18rem;
   height: 1.7rem;
   background-image: url(../assets/images/select-btn.png);
@@ -103,9 +103,11 @@ export default {
     width: 4rem;
     height: 5rem;
   }
-  /* .desc-wrapper>img {
-    margin: 0 auto;
-    width: 100%;
-  } */
+  .select-btn {
+    bottom: 2.4rem;
+    margin-left: -1.05px;
+    width: 2.09rem;
+    height: 0.85rem;
+  }
 }
 </style>
