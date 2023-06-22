@@ -111,8 +111,11 @@ export default {
 }
 @media (max-width: 375px) {
   .map-area::before {
+
     left: -1rem;
+    top: -1rem;
     right: -1rem;
+    bottom: -1rem;
   }
   .desc-btn {
     bottom: 1rem;
