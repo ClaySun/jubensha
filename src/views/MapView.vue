@@ -158,6 +158,9 @@ export default {
   align-items: center;
 }
 @media (max-width: 375px) {
+  .back-to-roles {
+    margin-top: .6rem;
+  }
   .map-scale {
     margin-top: 3rem;
   }
