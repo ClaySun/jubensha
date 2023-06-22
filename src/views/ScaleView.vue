@@ -60,7 +60,7 @@ export default {
   /* overflow-x: scroll; */
   z-index: 3;
   position: absolute;
-  top: 3.6rem;
+  top: 1rem;
   right: 1rem;
   left: .9rem;
   height: 9.8rem;
@@ -102,19 +102,16 @@ export default {
   height: 9.8rem;
 }
 .desc-btn {
-  z-index: 2;
+  z-index: 4;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 3rem;
   left: 0;
   text-align: center;
 }
 @media (max-width: 375px) {
-  .map-area {
-    top: 1rem;
-    /* right: 1rem;
-    left: .9rem;
-    height: 9.8rem; */
+  .desc-btn {
+    bottom: 1rem;
   }
 }
 </style>
