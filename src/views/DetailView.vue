@@ -148,12 +148,12 @@ export default {
   .desc-wrapper {
     margin-top: 2rem;
     overflow: scroll;
-    width: 5.8rem;
-    height: 9rem;
+    width: 4rem;
+    height: 5rem;
   }
-  .desc-wrapper>img {
+  /* .desc-wrapper>img {
     margin: 0 auto;
     width: 80%;
-  }
+  } */
 }
 </style>
