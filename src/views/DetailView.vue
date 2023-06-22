@@ -152,7 +152,7 @@ export default {
     margin-top: 2rem;
     overflow: scroll;
     width: 4rem;
-    height: 5rem;
+    height: 6rem;
   }
   /* .desc-wrapper>img {
     margin: 0 auto;
