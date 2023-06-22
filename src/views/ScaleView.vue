@@ -122,7 +122,7 @@ export default {
     content: '';
     position: absolute;
     left: -0.8rem;
-    top: -1.2rem;
+    top: -1.1rem;
     right: -1rem;
     bottom: -1rem;
   }
@@ -133,7 +133,7 @@ export default {
     height: 8rem;
   }
   .desc-btn {
-    bottom: .5rem;
+    bottom: .4rem;
   }
 }
 </style>
