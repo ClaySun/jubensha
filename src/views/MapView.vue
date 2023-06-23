@@ -159,7 +159,7 @@ export default {
 }
 @media (max-width: 375px) {
   .map-scale {
-    margin-top: 4.4rem;
+    margin-top: 4.2rem;
   }
 }
 </style>
