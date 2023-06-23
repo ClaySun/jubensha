@@ -118,9 +118,9 @@ export default {
   }
 }
 @media (max-width: 412px) and  (min-width: 376px) {
-  .desc-wrapper {
+  /* .desc-wrapper {
     margin-top: 3rem;
     height: 9rem;
-  }
+  } */
 }
 </style>
