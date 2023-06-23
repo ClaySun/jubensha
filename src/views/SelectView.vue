@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="list-each">
-          <router-link class="role" to="/detail/5">
+          <router-link class="role" to="/detail/4">
             <img :src="role04" alt="role04"/>
           </router-link>
           <div class="name">
