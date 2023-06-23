@@ -149,10 +149,10 @@ export default {
 }
 @media (max-width: 375px) {
   .desc-wrapper {
-    margin-top: 2rem;
+    margin-top: 3rem;
     overflow: scroll;
     width: 4rem;
-    height: 6rem;
+    height: 7rem;
   }
   /* .desc-wrapper>img {
     margin: 0 auto;
