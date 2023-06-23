@@ -117,7 +117,7 @@ export default {
     height: 1rem;
   }
 }
-@media (max-width: 412px) {
+@media (min-width: 412px) {
   .desc-wrapper {
     margin-top: 2.4rem;
     height: 7rem;
