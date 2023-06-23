@@ -98,10 +98,10 @@ export default {
 }
 @media (max-width: 375px) {
   .desc-wrapper {
-    margin-top: 2rem;
+    margin-top: 3rem;
     overflow: scroll;
-    width: 4rem;
-    height: 5rem;
+    width: 5rem;
+    height: 7rem;
   }
   .select-btn {
     bottom: 2.4rem;

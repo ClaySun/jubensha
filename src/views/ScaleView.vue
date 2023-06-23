@@ -88,7 +88,7 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: .8rem;
+  border-radius: .4rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -113,27 +113,28 @@ export default {
   .map-area {
     z-index: 3;
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     right: 1rem;
-    left: .9rem;
-    height: 8rem;
+    left: .8rem;
+    height: 9.5rem;
   }
   .map-area::before {
+    /* z-index: 4; */
     content: '';
     position: absolute;
-    left: -0.8rem;
-    top: -1.1rem;
+    left: -0.7rem;
+    top: -2.35rem;
     right: -1rem;
-    bottom: -1rem;
+    bottom: -2.2rem;
   }
   .image-area {
-    height: 8rem;
+    height: 9.5rem;
   }
   .image-area>img {
-    height: 8rem;
+    height: 9.5rem;
   }
   .desc-btn {
-    bottom: .4rem;
+    bottom: 1.2rem;
   }
 }
 </style>
