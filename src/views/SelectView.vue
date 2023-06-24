@@ -11,7 +11,7 @@
       <div class="list-area">
         <div class="list-each">
           <router-link class="role" to="/detail/0">
-            <img :src="role00" alt="role00"/>
+            <img @click="handler" :src="role00" alt="role00"/>
           </router-link>
           <div class="name">
             <img :src="select00" alt="select00"/>
@@ -19,7 +19,7 @@
         </div>
         <div class="list-each">
           <router-link class="role" to="/detail/1">
-            <img :src="role01" alt="role01"/>
+            <img @click="handler" :src="role01" alt="role01"/>
           </router-link>
           <div class="name">
             <img :src="select01" alt="select01"/>
@@ -27,7 +27,7 @@
         </div>
         <div class="list-each">
           <router-link class="role" to="/detail/2">
-            <img :src="role02" alt="role02"/>
+            <img @click="handler" :src="role02" alt="role02"/>
           </router-link>
           <div class="name">
             <img :src="select02" alt="select02"/>
@@ -37,7 +37,7 @@
       <div class="list-area gap">
         <div class="list-each">
           <router-link class="role" to="/detail/3">
-            <img :src="role03" alt="role03"/>
+            <img @click="handler" :src="role03" alt="role03"/>
           </router-link>
           <div class="name">
             <img :src="select03" alt="select03"/>
@@ -45,7 +45,7 @@
         </div>
         <div class="list-each">
           <router-link class="role" to="/detail/4">
-            <img :src="role04" alt="role04"/>
+            <img @click="handler" :src="role04" alt="role04"/>
           </router-link>
           <div class="name">
             <img :src="select04" alt="select04"/>
@@ -53,7 +53,7 @@
         </div>
         <div class="list-each">
           <router-link class="role" to="/detail/5">
-            <img :src="role05" alt="role05"/>
+            <img @click="handler" :src="role05" alt="role05"/>
           </router-link>
           <div class="name">
             <img :src="select05" alt="select05"/>
@@ -96,6 +96,12 @@ export default {
       role04,
       role05,
       bty
+    }
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
     }
   }
 }

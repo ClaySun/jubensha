@@ -22,11 +22,11 @@
         </template>
       </div>
       <div class="btns-area">
-        <div @click="$router.back(-1)" class="intro-back">
+        <div @click="goBack" class="intro-back">
           <img :src="back" alt="desc"/>
         </div>
         <router-link to="/map" class="intro-map">
-          <img :src="map" alt="desc"/>
+          <img @click="handler" :src="map" alt="desc"/>
         </router-link>
       </div>
     </div>
@@ -58,6 +58,16 @@ export default {
   },
   mounted () {
     console.log('test--', this.$route.params.id)
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
+    },
+    goBack() {
+      this.handler();
+      this.$router.back(-1);
+    }
   }
 }
 </script>

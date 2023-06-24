@@ -2,13 +2,26 @@
 <template>
   <div class="home-bg">
     <router-link to="/about">
-      <div class="home-link"></div>
+      <div @click="handler" class="home-link"></div>
     </router-link>
   </div>
 </template>
 
-<script setup>
-
+<script>
+import desc from '../assets/images/desc.png'
+export default {
+  data () {
+    return {
+      desc
+    }
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
+    }
+  }
+}
 </script>
 
 <style scoped>

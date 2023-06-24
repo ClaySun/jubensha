@@ -6,7 +6,7 @@
         <img :src="map" alt="map" />
       </div>
     </div>
-    <div class="desc-btn" @click="$router.back(-1)">
+    <div class="desc-btn" @click="goBack">
       <img :src="descBtn2" alt="descBtn2"/>
     </div>
   </div>
@@ -21,6 +21,16 @@ export default {
     return {
       map,
       descBtn2
+    }
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
+    },
+    goBack() {
+      this.handler();
+      this.$router.back(-1);
     }
   }
 }

@@ -1,63 +1,63 @@
 <template>
   <div class="map-bg">
     <div class="desc-bg"></div>
-    <div class="back-to-roles" @click="$router.back(-1)">
+    <div class="back-to-roles" @click="goBack">
       <img :src="mapBack" alt="mapBack"/>
     </div>
     <router-link to="/scale">
       <div class="map-scale">
-        <img :src="mapScale" alt="mapScale"/>
+        <img @click="handler" :src="mapScale" alt="mapScale"/>
       </div>
     </router-link>
     <div class="location-area">
       <div class="list-area">
         <div class="list-each">
           <router-link to="/desc/0">
-            <img :src="map00" alt="map00"/>
+            <img @click="handler" :src="map00" alt="map00"/>
           </router-link>
         </div>
         <div class="list-each">
           <router-link to="/desc/1">
-            <img :src="map01" alt="map01"/>
+            <img @click="handler" :src="map01" alt="map01"/>
           </router-link>
         </div>
         <div class="list-each">
           <router-link to="/desc/2">
-            <img :src="map02" alt="map02"/>
+            <img @click="handler" :src="map02" alt="map02"/>
           </router-link>
         </div>
       </div>
       <div class="list-area">
         <div class="list-each">
           <router-link to="/desc/3">
-            <img :src="map03" alt="map03"/>
+            <img @click="handler" :src="map03" alt="map03"/>
           </router-link>
         </div>
         <div class="list-each">
           <router-link to="/desc/4">
-            <img :src="map04" alt="map04"/>
+            <img @click="handler" :src="map04" alt="map04"/>
           </router-link>
         </div>
         <div class="list-each">
           <router-link to="/desc/5">
-            <img :src="map05" alt="map05"/>
+            <img @click="handler" :src="map05" alt="map05"/>
           </router-link>
         </div>
       </div>
       <div class="list-area">
         <div class="list-each">
           <router-link to="/desc/6">
-            <img :src="map06" alt="map06"/>
+            <img @click="handler" :src="map06" alt="map06"/>
           </router-link>
         </div>
         <div class="list-each">
           <router-link to="/desc/7">
-            <img :src="map07" alt="map07"/>
+            <img @click="handler" :src="map07" alt="map07"/>
           </router-link>
         </div>
         <div class="list-each">
           <router-link to="/desc/8">
-            <img :src="map08" alt="map08"/>
+            <img @click="handler" :src="map08" alt="map08"/>
           </router-link>
         </div>
       </div>
@@ -93,6 +93,16 @@ export default {
       map08,
       mapBack,
       mapScale
+    }
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
+    },
+    goBack() {
+      this.handler();
+      this.$router.back(-1);
     }
   }
 }

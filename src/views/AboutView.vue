@@ -4,7 +4,7 @@
       <div class="desc-wrapper">
         <img :src="desc" alt="desc"/>
         <router-link to="/select">
-          <div class="select-btn"></div>
+          <div @click="handler" class="select-btn"></div>
         </router-link>
         <div class="tag"></div>
       </div>
@@ -18,6 +18,12 @@ export default {
   data () {
     return {
       desc
+    }
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
     }
   }
 }

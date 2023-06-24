@@ -2,7 +2,7 @@
   <div :class="`map-bg desc-bg${id}`">
     <!-- <div class="desc-bg"></div>
     <div class="desc-bg02"></div> -->
-    <div class="desc-btn" @click="$router.back(-1)">
+    <div class="desc-btn" @click="goBack">
       <!-- <img :src="descBtn" alt="descBtn"/>
       <img :src="descBtn2" alt="descBtn2"/> -->
     </div>
@@ -22,6 +22,16 @@ export default {
   },
   mounted () {
     console.log('desc--', this.$route.params.id)
+  },
+  methods: {
+    handler() {
+        let audio = new Audio('../../public/click.wav');
+        audio.play();
+    },
+    goBack() {
+      this.handler();
+      this.$router.back(-1);
+    }
   }
 }
 </script>
