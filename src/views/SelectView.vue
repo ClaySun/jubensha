@@ -10,25 +10,25 @@
       </div>
       <div class="list-area">
         <div class="list-each">
-          <router-link class="role" to="/detail/0">
-            <img @click="handler" :src="role00" alt="role00"/>
-          </router-link>
+          <!-- <router-link class="role" to="/detail/0"> -->
+            <img @click="handler(0)" :src="role00" alt="role00"/>
+          <!-- </router-link> -->
           <div class="name">
             <img :src="select00" alt="select00"/>
           </div>
         </div>
         <div class="list-each">
-          <router-link class="role" to="/detail/1">
-            <img @click="handler" :src="role01" alt="role01"/>
-          </router-link>
+          <!-- <router-link class="role" to="/detail/1"> -->
+            <img @click="handler(1)" :src="role01" alt="role01"/>
+          <!-- </router-link> -->
           <div class="name">
             <img :src="select01" alt="select01"/>
           </div>
         </div>
         <div class="list-each">
-          <router-link class="role" to="/detail/2">
-            <img @click="handler" :src="role02" alt="role02"/>
-          </router-link>
+          <!-- <router-link class="role" to="/detail/2"> -->
+            <img @click="handler(2)" :src="role02" alt="role02"/>
+          <!-- </router-link> -->
           <div class="name">
             <img :src="select02" alt="select02"/>
           </div>
@@ -36,31 +36,34 @@
       </div>
       <div class="list-area gap">
         <div class="list-each">
-          <router-link class="role" to="/detail/3">
-            <img @click="handler" :src="role03" alt="role03"/>
-          </router-link>
+          <!-- <router-link class="role" to="/detail/3"> -->
+            <img @click="handler(3)" :src="role03" alt="role03"/>
+          <!-- </router-link> -->
           <div class="name">
             <img :src="select03" alt="select03"/>
           </div>
         </div>
         <div class="list-each">
-          <router-link class="role" to="/detail/4">
-            <img @click="handler" :src="role04" alt="role04"/>
-          </router-link>
+          <!-- <router-link class="role" to="/detail/4"> -->
+            <img @click="handler(4)" :src="role04" alt="role04"/>
+          <!-- </router-link> -->
           <div class="name">
             <img :src="select04" alt="select04"/>
           </div>
         </div>
         <div class="list-each">
-          <router-link class="role" to="/detail/5">
-            <img @click="handler" :src="role05" alt="role05"/>
-          </router-link>
+          <!-- <router-link class="role" to="/detail/5"> -->
+            <img @click="handler(5)" :src="role05" alt="role05"/>
+          <!-- </router-link> -->
           <div class="name">
             <img :src="select05" alt="select05"/>
           </div>
         </div>
       </div>
     </div>
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -99,10 +102,14 @@ export default {
     }
   },
   methods: {
-    handler() {
+    handler(params) {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
+      const that = this
+      setTimeout(function() {
+        that.$router.push(`/detail/${params}`)
+      }, 500)
     }
   }
 }

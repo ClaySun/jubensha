@@ -1,67 +1,70 @@
 <template>
   <div class="map-bg">
     <div class="desc-bg"></div>
-    <div class="back-to-roles" @click="goBack">
+    <div class="back-to-roles" @click="handler()">
       <img :src="mapBack" alt="mapBack"/>
     </div>
-    <router-link to="/scale">
+    <!-- <router-link to="/scale"> -->
       <div class="map-scale">
-        <img @click="handler" :src="mapScale" alt="mapScale"/>
+        <img @click="handler('/scale')" :src="mapScale" alt="mapScale"/>
       </div>
-    </router-link>
+    <!-- </router-link> -->
     <div class="location-area">
       <div class="list-area">
         <div class="list-each">
-          <router-link to="/desc/0">
-            <img @click="handler" :src="map00" alt="map00"/>
-          </router-link>
+          <!-- <router-link to="/desc/0"> -->
+            <img @click="handler('/desc/0')" :src="map00" alt="map00"/>
+          <!-- </router-link> -->
         </div>
         <div class="list-each">
-          <router-link to="/desc/1">
-            <img @click="handler" :src="map01" alt="map01"/>
-          </router-link>
+          <!-- <router-link to="/desc/1"> -->
+            <img @click="handler('/desc/1')" :src="map01" alt="map01"/>
+          <!-- </router-link> -->
         </div>
         <div class="list-each">
-          <router-link to="/desc/2">
-            <img @click="handler" :src="map02" alt="map02"/>
-          </router-link>
-        </div>
-      </div>
-      <div class="list-area">
-        <div class="list-each">
-          <router-link to="/desc/3">
-            <img @click="handler" :src="map03" alt="map03"/>
-          </router-link>
-        </div>
-        <div class="list-each">
-          <router-link to="/desc/4">
-            <img @click="handler" :src="map04" alt="map04"/>
-          </router-link>
-        </div>
-        <div class="list-each">
-          <router-link to="/desc/5">
-            <img @click="handler" :src="map05" alt="map05"/>
-          </router-link>
+          <!-- <router-link to="/desc/2"> -->
+            <img @click="handler('/desc/2')" :src="map02" alt="map02"/>
+          <!-- </router-link> -->
         </div>
       </div>
       <div class="list-area">
         <div class="list-each">
-          <router-link to="/desc/6">
-            <img @click="handler" :src="map06" alt="map06"/>
-          </router-link>
+          <!-- <router-link to="/desc/3"> -->
+            <img @click="handler('/desc/3')" :src="map03" alt="map03"/>
+          <!-- </router-link> -->
         </div>
         <div class="list-each">
-          <router-link to="/desc/7">
-            <img @click="handler" :src="map07" alt="map07"/>
-          </router-link>
+          <!-- <router-link to="/desc/4"> -->
+            <img @click="handler('/desc/4')" :src="map04" alt="map04"/>
+          <!-- </router-link> -->
         </div>
         <div class="list-each">
-          <router-link to="/desc/8">
-            <img @click="handler" :src="map08" alt="map08"/>
-          </router-link>
+          <!-- <router-link to="/desc/5"> -->
+            <img @click="handler('/desc/5')" :src="map05" alt="map05"/>
+          <!-- </router-link> -->
+        </div>
+      </div>
+      <div class="list-area">
+        <div class="list-each">
+          <!-- <router-link to="/desc/6"> -->
+            <img @click="handler('/desc/6')" :src="map06" alt="map06"/>
+          <!-- </router-link> -->
+        </div>
+        <div class="list-each">
+          <!-- <router-link to="/desc/7"> -->
+            <img @click="handler('/desc/7')" :src="map07" alt="map07"/>
+          <!-- </router-link> -->
+        </div>
+        <div class="list-each">
+          <!-- <router-link to="/desc/8"> -->
+            <img @click="handler('/desc/8')" :src="map08" alt="map08"/>
+          <!-- </router-link> -->
         </div>
       </div>
     </div>
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -96,15 +99,20 @@ export default {
     }
   },
   methods: {
-    handler() {
+    handler(params) {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
+      const that = this
+      setTimeout(function() {
+        if(params) {
+          that.$router.push(params)
+        } else {
+          that.$router.back(-1)
+        }
+        
+      }, 500)
     },
-    goBack() {
-      this.handler();
-      this.$router.back(-1);
-    }
   }
 }
 </script>

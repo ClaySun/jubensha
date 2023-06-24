@@ -3,12 +3,13 @@
     <div class="desc-bg">
       <div class="desc-wrapper">
         <img :src="desc" alt="desc"/>
-        <router-link to="/select">
-          <div @click="handler" class="select-btn"></div>
-        </router-link>
+        <div @click="handler" class="select-btn"></div>
         <div class="tag"></div>
       </div>
     </div>
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -25,6 +26,10 @@ export default {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
+      const that = this
+      setTimeout(function() {
+        that.$router.push('/select')
+      }, 500)
     }
   }
 }

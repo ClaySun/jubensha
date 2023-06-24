@@ -2,10 +2,13 @@
   <div :class="`map-bg desc-bg${id}`">
     <!-- <div class="desc-bg"></div>
     <div class="desc-bg02"></div> -->
-    <div class="desc-btn" @click="goBack">
+    <div class="desc-btn" @click="handler()">
       <!-- <img :src="descBtn" alt="descBtn"/>
       <img :src="descBtn2" alt="descBtn2"/> -->
     </div>
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -24,15 +27,19 @@ export default {
     console.log('desc--', this.$route.params.id)
   },
   methods: {
-    handler() {
+    handler(params) {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
+      const that = this
+      setTimeout(function() {
+        if(params) {
+          that.$router.push(params)
+        } else {
+          that.$router.back(-1)
+        }
+      }, 500)
     },
-    goBack() {
-      this.handler();
-      this.$router.back(-1);
-    }
   }
 }
 </script>

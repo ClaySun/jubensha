@@ -25,11 +25,14 @@
         <div @click="goBack" class="intro-back">
           <img :src="back" alt="desc"/>
         </div>
-        <router-link to="/map" class="intro-map">
+        <div class="intro-map">
           <img @click="handler" :src="map" alt="desc"/>
-        </router-link>
+        </div>
       </div>
     </div>
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -64,6 +67,10 @@ export default {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
+      const that = this
+      setTimeout(function() {
+        that.$router.push('/map')
+      }, 500)
     },
     goBack() {
       this.handler();

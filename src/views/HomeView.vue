@@ -1,9 +1,7 @@
 
 <template>
   <div class="home-bg">
-    <!-- <router-link to="/about"> -->
-      <div @click="handler" class="home-link"></div>
-    <!-- </router-link> -->
+    <div @click="handler" class="home-link"></div>
     <audio ref="audio" class="aud">
       <source src="../../public/click.wav" />
     </audio>
@@ -22,8 +20,13 @@ export default {
   methods: {
     handler() {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
+      console.log('audioUrl--', audioUrl)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
+      const that = this
+      setTimeout(function() {
+        that.$router.push('/about')
+      }, 500)
     }
   }
 }

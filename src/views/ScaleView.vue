@@ -6,9 +6,12 @@
         <img :src="map" alt="map" />
       </div>
     </div>
-    <div class="desc-btn" @click="goBack">
+    <div class="desc-btn" @click="handler()">
       <img :src="descBtn2" alt="descBtn2"/>
     </div>
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -24,14 +27,19 @@ export default {
     }
   },
   methods: {
-    handler() {
+    handler(params) {
       const audioUrl = new URL('../../public/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
-    },
-    goBack() {
-      this.handler();
-      this.$router.back(-1);
+      const that = this
+      setTimeout(function() {
+        if(params) {
+          that.$router.push(params)
+        } else {
+          that.$router.back(-1)
+        }
+        
+      }, 500)
     }
   }
 }
