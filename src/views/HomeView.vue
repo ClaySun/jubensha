@@ -1,9 +1,12 @@
 
 <template>
   <div class="home-bg">
-    <router-link to="/about">
-      <div @click="handler" class="home-link"></div>
-    </router-link>
+    <!-- <router-link to="/about"> -->
+      <div @click="bofang1" class="home-link"></div>
+    <!-- </router-link> -->
+    <audio ref="audio" class="aud">
+      <source src="../../public/click.wav" />
+    </audio>
   </div>
 </template>
 
@@ -12,10 +15,19 @@ import desc from '../assets/images/desc.png'
 export default {
   data () {
     return {
+      mp3url: "",
       desc
     }
   },
   methods: {
+    bofang1() {
+      const audioUrl = new URL('../../public/click.wav', import.meta.url)
+      console.log('audioUrl--', audioUrl)
+      let music1 = new Audio();
+      // music1 = require("../../public/click.wav");
+      this.$refs.audio.src = audioUrl.href;
+      this.$refs.audio.play();
+    },
     handler() {
         let audio = new Audio('../../public/click.wav');
         audio.play();
