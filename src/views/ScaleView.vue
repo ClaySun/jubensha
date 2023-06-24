@@ -38,7 +38,6 @@ export default {
         } else {
           that.$router.back(-1)
         }
-        
       }, 500)
     }
   }
