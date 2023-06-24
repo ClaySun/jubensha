@@ -61,8 +61,9 @@ export default {
   },
   methods: {
     handler() {
-        let audio = new Audio('../../public/click.wav');
-        audio.play();
+      const audioUrl = new URL('../../public/click.wav', import.meta.url)
+      this.$refs.audio.src = audioUrl.href;
+      this.$refs.audio.play();
     },
     goBack() {
       this.handler();
