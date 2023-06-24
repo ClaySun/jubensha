@@ -63,7 +63,7 @@
       </div>
     </div>
     <audio ref="audio" class="aud">
-      <source src="../../public/click.wav" />
+      <source src="../assets/click.wav" />
     </audio>
   </div>
 </template>
@@ -100,7 +100,7 @@ export default {
   },
   methods: {
     handler(params) {
-      const audioUrl = new URL('../../public/click.wav', import.meta.url)
+      const audioUrl = new URL('../assets/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
       const that = this
@@ -111,7 +111,7 @@ export default {
           that.$router.back(-1)
         }
         
-      }, 500)
+      }, 1000)
     },
   }
 }
@@ -155,7 +155,7 @@ export default {
 .map-scale {
   z-index: 3;
   position: relative;
-  margin-top: 4.4rem;
+  margin-top: 3rem;
   text-align: center;
 }
 .location-area {
@@ -178,7 +178,7 @@ export default {
 }
 @media (max-width: 375px) {
   .map-scale {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 }
 </style>

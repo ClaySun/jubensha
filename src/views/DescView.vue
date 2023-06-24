@@ -7,7 +7,7 @@
       <img :src="descBtn2" alt="descBtn2"/> -->
     </div>
     <audio ref="audio" class="aud">
-      <source src="../../public/click.wav" />
+      <source src="../assets/click.wav" />
     </audio>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     handler(params) {
-      const audioUrl = new URL('../../public/click.wav', import.meta.url)
+      const audioUrl = new URL('../assets/click.wav', import.meta.url)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
       const that = this
@@ -38,7 +38,7 @@ export default {
         } else {
           that.$router.back(-1)
         }
-      }, 500)
+      }, 1000)
     },
   }
 }

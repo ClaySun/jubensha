@@ -3,7 +3,7 @@
   <div class="home-bg">
     <div @click="handler" class="home-link"></div>
     <audio ref="audio" class="aud">
-      <source src="../../public/click.wav" />
+      <source src="../assets/click.wav" />
     </audio>
   </div>
 </template>
@@ -19,14 +19,14 @@ export default {
   },
   methods: {
     handler() {
-      const audioUrl = new URL('../../public/click.wav', import.meta.url)
+      const audioUrl = new URL('../assets/click.wav', import.meta.url)
       console.log('audioUrl--', audioUrl)
       this.$refs.audio.src = audioUrl.href;
       this.$refs.audio.play();
       const that = this
       setTimeout(function() {
         that.$router.push('/about')
-      }, 500)
+      }, 1000)
     }
   }
 }
